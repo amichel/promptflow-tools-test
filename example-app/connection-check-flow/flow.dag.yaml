@@ -1,0 +1,15 @@
+nodes:
+- name: test_connection_with_script_tool
+  type: python
+  source:
+    type: code
+    path: test_connection.py
+  inputs:
+    connection: test_connection
+- name: test_connection_with_package_tool
+  type: python
+  source:
+    type: package
+    tool: test_tools.tools.test_connection.validate
+  inputs:
+    connection: test_connection

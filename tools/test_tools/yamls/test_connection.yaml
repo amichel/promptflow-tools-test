@@ -1,0 +1,10 @@
+test_tools.tools.test_connection.validate:
+  function: validate
+  inputs:
+    connection:
+      type:
+      - TestConnection
+  module: test_tools.tools.test_connection
+  name: Test Connection Validate
+  description: Validate a custom strong typed connection
+  type: python

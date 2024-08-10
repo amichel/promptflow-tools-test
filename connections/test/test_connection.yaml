@@ -1,0 +1,11 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/CustomStrongTypeConnection.schema.json
+name: "test_connection"
+type: custom
+custom_type: TestConnection
+module: test_tools.tools.test_connection
+package: test_tools
+package_version: 0.0.1
+configs:
+  test_key: "ABCD"
+secrets:
+  test_secret: ""
